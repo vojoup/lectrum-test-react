@@ -1,0 +1,34 @@
+@import '../../variables';
+
+form {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    margin: $spacing/4;
+  }
+
+  input {
+    width: 50vh;
+    align-self: center;
+    border: darken($bg-color, 40) 1px solid;
+    border-radius: 15px;
+    padding: $spacing/2 $spacing;
+
+    &[name='name'] {
+      margin-bottom: $spacing;
+    }
+
+    .invalid {
+      border: red 5px solid;
+    }
+  }
+
+  button {
+    width: 10vh;
+    align-self: center;
+    margin: $spacing * 2;
+    border: darken($bg-color, 40) 1px solid;
+    border-radius: 15px;
+  }
+}
